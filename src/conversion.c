@@ -28,15 +28,15 @@ void getOption(int *n) {
         case '2':
             while ((menuOption = getchar()) != '\n');
             getOctal(n);
-            octalToDec(*n);
             octalToBin(*n);
+            octalToDec(*n);
             octalToHex(*n);
             break;
 
         case '3':
             while ((menuOption = getchar()) != '\n');
             getDec(n);
-            decToBinary(*n);
+            decToBin(*n);
             decToOctal(*n);
             decToHex(*n);
             break;
@@ -574,7 +574,7 @@ int getDec(int *n) {
     return *n;
 }
 
-int decToBinary(int n) {
+int decToBin(int n) {
     int binaryValue[255], i = 0, j = 0;
 
     do {

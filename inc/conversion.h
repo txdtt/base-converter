@@ -37,7 +37,7 @@ int hexToOctal(int n);
 
 int getDec(int *n);
 
-int decToBinary(int n);
+int decToBin(int n);
 
 int decToOctal(int n);
 

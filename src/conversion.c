@@ -21,8 +21,8 @@ void getOption(int *n) {
         case '1':
             while ((menuOption = getchar()) != '\n');
             getBin(n);
-            binToDec(*n);
             binToOctal(*n);
+            binToDec(*n);
             binToHex(*n);
             break;
         case '2':
@@ -45,8 +45,8 @@ void getOption(int *n) {
             while ((menuOption = getchar()) != '\n');
             getHex(n);
             hexToBin(*n);
-            hexToDec(*n);
             hexToOctal(*n);
+            hexToDec(*n);
             break;
             
         default:

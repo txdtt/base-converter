@@ -254,11 +254,17 @@ int binToHex(int n) {
     } while ((valueConversion / 16) != 0);
 
     printf("HEXADECIMAL\n");
+    int leadingZeros = 1;
     for (i = j - 1; i >= 0; i--) {
-        if (hexValue[i] < 10) {
-            printf("%d", hexValue[i]);
-        } else {
-            printf("%c",'A' + hexValue[i] - 10);
+        if (hexValue[i] != 0) {
+            leadingZeros = 0;
+        }
+        if (!leadingZeros || i == 0) {
+            if (hexValue[i] < 10) {
+                printf("%d", hexValue[i]);
+            } else {
+                printf("%c", 'A' + hexValue[i] - 10);
+            }
         }
     }
 
@@ -465,11 +471,17 @@ int octalToHex(int n) {
     } while ((valueConversion / 16) != 0);
 
     printf("HEXADECIMAL\n");
+    int leadingZeros = 1;
     for (i = j - 1; i >= 0; i--) {
-        if (hexValue[i] < 10) {
-            printf("%d", hexValue[i]);
-        } else {
-            printf("%c",'A' + hexValue[i] - 10);
+        if (hexValue[i] != 0) {
+            leadingZeros = 0;
+        }
+        if (!leadingZeros || i == 0) {
+            if (hexValue[i] < 10) {
+                printf("%d", hexValue[i]);
+            } else {
+                printf("%c", 'A' + hexValue[i] - 10);
+            }
         }
     }
 
@@ -649,11 +661,17 @@ int decToHex(int n) {
     } while ((n / 16) != 0);
 
     printf("HEXADECIMAL\n");
+    int leadingZeros = 1;
     for (i = j - 1; i >= 0; i--) {
-        if (hexValue[i] < 10) {
-            printf("%d", hexValue[i]);
-        } else {
-            printf("%c",'A' + hexValue[i] - 10);
+        if (hexValue[i] != 0) {
+            leadingZeros = 0;
+        }
+        if (!leadingZeros || i == 0) {
+            if (hexValue[i] < 10) {
+                printf("%d", hexValue[i]);
+            } else {
+                printf("%c", 'A' + hexValue[i] - 10);
+            }
         }
     }
 

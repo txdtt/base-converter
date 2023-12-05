@@ -1,7 +1,11 @@
 #ifndef CONVERSION_H
 #define CONVERSION_H
 
-#define CLR_SCREEN system("cls");
+#ifdef _WIN32
+    #define CLR_SCREEN system("cls");
+#else
+    #define CLR_SCREEN system("clear");
+#endif
 
 #define BUFFER_SIZE            1000
 #define RETRY_INPUT_SIZE       2

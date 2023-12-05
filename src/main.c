@@ -1,5 +1,5 @@
 // Windows 10 Versão 22H2 (Build 19045.3693)
-// gcc (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders) 13.2.0
+// Compilado usando gcc 13.2.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders)
 
 #include <stdio.h>
 #include<stdlib.h>
